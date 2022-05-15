@@ -5,7 +5,7 @@ export default function Clock(props) {
 
   return (
     <View style={styles.clock} >
-      <Text style={styles.clockText}>07</Text>
+      <Text style={styles.clockText}>{props.timer}</Text>
     </View>
   );
 }

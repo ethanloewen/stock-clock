@@ -1,11 +1,14 @@
 import reactDom from 'react-dom';
 import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
 import Clock from './Clock';
 
 export default function Item(props) {
+  const [timer, setTimer] = useState(10);
+  
   return (
     <View style={styles.container} >
-      <Clock boxHeight={boxHeightVar} />
+      <Clock boxHeight={boxHeightVar} timer={timer} />
       <View style={styles.boxBody}>
         <Text>Chicken-Noodle Soup</Text>
       </View>

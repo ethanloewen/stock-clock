@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Item from './components/Item.js';
 
 export default function App() {
+
   return (
     <View style={styles.container}>
       <Item />
@@ -20,7 +21,6 @@ const styles = StyleSheet.create({
     margin: 0,
     padding: 0,
     boxSizing: 'border-box',
-    // justifyContent: 'center',
     borderWidth: 5,
     borderColor: 'red',
   },
