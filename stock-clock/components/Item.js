@@ -1,12 +1,11 @@
 import reactDom from 'react-dom';
 import { StyleSheet, Text, View } from 'react-native';
+import Clock from './Clock';
 
 export default function Item(props) {
   return (
     <View style={styles.container} >
-      <View style={styles.clock}>
-        <Text style={styles.clockText}>07</Text>
-      </View>
+      <Clock boxHeight={boxHeightVar} />
       <View style={styles.boxBody}>
         <Text>Chicken-Noodle Soup</Text>
       </View>
@@ -42,19 +41,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'grey',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-
-  clock: {
-    height: boxHeightVar,
-    width: boxHeightVar,
-    backgroundColor: 'black',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  clockText: {
-    color: 'white',
-    fontSize: 30,
   },
 
   groupStatus: {
