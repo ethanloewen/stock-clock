@@ -10,6 +10,11 @@ export default function Item(props) {
       <View style={styles.boxBody}>
         <Text>Chicken-Noodle Soup</Text>
       </View>
+      <View style={styles.groupStatus}>
+      </View>
+      <View style={styles.grabber}>
+
+      </View>
     </View>
   );
 }
@@ -50,5 +55,17 @@ const styles = StyleSheet.create({
   clockText: {
     color: 'white',
     fontSize: 30,
+  },
+
+  groupStatus: {
+    width: 10,
+    height: boxHeightVar,
+    backgroundColor: 'green',
+  },
+
+  grabber: {
+    width: (boxHeightVar / 2),
+    height: boxHeightVar,
+    backgroundColor: 'aqua',
   },
 });
