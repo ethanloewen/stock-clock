@@ -4,22 +4,51 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Item(props) {
   return (
     <View style={styles.container} >
-      <Text>Test</Text>
+      <View style={styles.clock}>
+        <Text style={styles.clockText}>07</Text>
+      </View>
+      <View style={styles.boxBody}>
+        <Text>Chicken-Noodle Soup</Text>
+      </View>
     </View>
   );
 }
+
+const boxHeightVar = 100;
 
 const styles = StyleSheet.create({
   container: {
     flexWidth: 1,
     alignSelf: 'stretch',
-    height: 100, //remove later
+    height: boxHeightVar, //remove later
     backgroundColor: '#fff',
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     borderWidth: 3,
     marginTop: 50,
     borderColor: 'blue',
     borderRadius: 5,
+  },
+
+  boxBody: {
+    flex: 1,
+    height: boxHeightVar,
+    backgroundColor: 'grey',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  clock: {
+    height: boxHeightVar,
+    width: boxHeightVar,
+    backgroundColor: 'black',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  clockText: {
+    color: 'white',
+    fontSize: 30,
   },
 });

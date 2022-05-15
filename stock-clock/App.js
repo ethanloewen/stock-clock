@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     margin: 0,
     padding: 0,
+    boxSizing: 'border-box',
     // justifyContent: 'center',
     borderWidth: 5,
     borderColor: 'red',
