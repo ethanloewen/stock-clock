@@ -10,19 +10,19 @@ export default function Clock(props) {
   );
 }
 
-const boxHeightVar = 100;
+const boxHeightVar = 75;
 
 const styles = StyleSheet.create({
   clock: {
     height: boxHeightVar,
     width: (boxHeightVar * 0.6),
-    backgroundColor: 'black',
+    backgroundColor: '#17526D',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   clockText: {
     color: 'white',
-    fontSize: 30,
+    fontSize: 26,
   },
 });

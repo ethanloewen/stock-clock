@@ -10,7 +10,12 @@ export default function Item(props) {
     <View style={styles.container} >
       <Clock boxHeight={boxHeightVar} timer={timer} />
       <View style={styles.boxBody}>
-        <Text>Chicken-Noodle Soup</Text>
+        <View style={styles.itemNameContainer}>
+          <Text style={styles.itemName}>Chicken-Noodle Soup</Text>
+        </View>
+        <View style={styles.expiryContainer}>
+        <Text>Expiry: 04/06/22</Text>
+        </View>
       </View>
       <View style={styles.groupStatus}>
       </View>
@@ -21,7 +26,7 @@ export default function Item(props) {
   );
 }
 
-const boxHeightVar = 100;
+const boxHeightVar = 75;
 
 const styles = StyleSheet.create({
   container: {
@@ -41,8 +46,26 @@ const styles = StyleSheet.create({
   boxBody: {
     flex: 1,
     height: boxHeightVar,
-    backgroundColor: 'grey',
+    backgroundColor: '#65C0EA',
+    alignItems: 'stretch',
+    justifyContent: 'center',
+  },
+
+  itemNameContainer: {
+    flex: 1,
+    fontSize: 16,
     alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+  },
+
+  itemName: {
+    fontSize: 18,
+  },
+
+  expiryContainer: {
+    alignItems: 'center',
+    paddingBottom: 5,
     justifyContent: 'center',
   },
 
