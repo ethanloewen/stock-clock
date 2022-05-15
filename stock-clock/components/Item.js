@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
+import reactDom from 'react-dom';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function Item(props) {
   return (
-    <div style={styles.itemBox}>
+    <View style={styles.container} >
       <Text>Test</Text>
-      <StatusBar style="auto" />
-    </div>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  itemBox: {
-    flex: 1,
-    backgroundColor: 'green',
+  container: {
+    flexWidth: 1,
+    alignSelf: 'stretch',
+    height: 100, //remove later
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    borderWidth: 3,
+    marginTop: 50,
+    borderColor: 'blue',
+    borderRadius: 5,
   },
 });
