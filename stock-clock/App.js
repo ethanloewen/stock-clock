@@ -7,6 +7,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Item itemNameText={'Chicken-Noodle Soup'} expiryText={'04/06/22'}/>
+      <Item itemNameText={'Chicken-Noodle Soup'} expiryText={'04/06/22'}/>
+      <Item itemNameText={'Chicken-Noodle Soup'} expiryText={'04/06/22'}/>
+      <Item itemNameText={'Chicken-Noodle Soup'} expiryText={'04/06/22'}/>
     </View>
   );
 }
@@ -18,8 +21,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     margin: 0,
     padding: 0,
-    // boxSizing: 'border-box',
-    // borderWidth: 5,
-    // borderColor: 'red',
+    marginTop: 40, // temporary margin
   },
 });
