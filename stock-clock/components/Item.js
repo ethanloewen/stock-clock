@@ -11,16 +11,15 @@ export default function Item(props) {
       <Clock boxHeight={boxHeightVar} timer={timer} />
       <View style={styles.boxBody}>
         <View style={styles.itemNameContainer}>
-          <Text style={styles.itemName}>Chicken-Noodle Soup</Text>
+          <Text style={styles.itemName}>{props.itemNameText}</Text>
         </View>
         <View style={styles.expiryContainer}>
-        <Text>Expiry: 04/06/22</Text>
+        <Text>Expiry: {props.expiryText}</Text>
         </View>
       </View>
       <View style={styles.groupStatus}>
       </View>
       <View style={styles.grabber}>
-
       </View>
     </View>
   );
@@ -37,10 +36,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    borderWidth: 3,
     marginTop: 50,
-    borderColor: 'blue',
-    borderRadius: 5,
+    paddingHorizontal: 15,
+    // borderColor: 'rgba(158, 150, 150, 1)',
+    // borderWidth: 10,
+    // borderRadius: 5,
   },
 
   boxBody: {
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
 
   itemName: {
     fontSize: 18,
+    fontWeight: 'bold',
   },
 
   expiryContainer: {
@@ -72,12 +73,14 @@ const styles = StyleSheet.create({
   groupStatus: {
     width: 10,
     height: boxHeightVar,
-    backgroundColor: 'green',
+    backgroundColor: '#1EA82E',
   },
 
   grabber: {
     width: (boxHeightVar / 2),
     height: boxHeightVar,
-    backgroundColor: 'aqua',
+    backgroundColor: '#DB6E61',
+    borderTopRightRadius: 5,
+    borderBottomRightRadius: 5,
   },
 });

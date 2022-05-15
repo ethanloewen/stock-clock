@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#17526D',
     alignItems: 'center',
     justifyContent: 'center',
+    borderTopLeftRadius: 5,
+    borderBottomLeftRadius: 5,
   },
 
   clockText: {
